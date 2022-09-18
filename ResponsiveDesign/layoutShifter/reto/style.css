@@ -1,14 +1,14 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 .container {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .c1, .c2, .c3, .c4, .c5 {
     width: 100%;
@@ -17,32 +17,76 @@ html {
     margin: 1rem;
 }
 .c1 {
-    background-color: red;
-    margin-bottom: 0;
+    background-color: gray;
 }
 .c2 {
     height: auto;
-    margin: 0;
+    margin: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 .c3 {
-    background-color: aqua;
-    width: auto;
+    background-color: chocolate;
+    margin: 0;
 }
 .c4 {
-    background-color: gray;
-    width: auto;
+    background-color: seagreen;
+    margin: 0;
 }
 .c5 {
-    background-color: green;
-    margin-top: 0;
+    background-color: firebrick;
 }
-@media (min-width: 600px){
+@media (min-width: 600px) {
     .c1 {
         width: 25%;
         height: 300px;
+        margin: 1rem 0;
+        border-left: 1rem solid white;
     }
     .c2 {
-        width: 72%;
-        margin-left: ;
+        width: 75%;
+        height: 300px;
+        margin: 1rem 0;
+        border-left: 1rem solid white;
+        border-right: 1rem solid white;
+    }
+    .c3 {
+        height: auto;
+    }
+    .c4 {
+        height: auto;
+    }
+    .c5 {
+        width: 100%;
+        height: 300px;
+        margin: 0 1rem;
+    }
+}
+@media (min-width: 800px) {
+    .c1 {
+        width: 35%;
+        height: 600px;
+        border-right: 1rem solid white;
+        border-left: 0;
+        order: 3;
+    }
+    .c2 {
+        width: 30%;
+        height: 600px;
+        order: 2;
+    }
+    .c3 {
+        height: auto;
+    }
+    .c4 {
+        height: auto;
+    }
+    .c5 {
+        margin: 1rem 0;
+        width: 35%;
+        height: 600px;
+        order: 1;
+        border-left: 1rem solid white;
     }
 }
